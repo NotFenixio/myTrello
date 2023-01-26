@@ -1,15 +1,16 @@
 {
+    "name": "Test",
+    "description": "A cool test for testing PHPStan with ",
+    "version": "0.3.0"
     "authors": [
         {
-            "name": "NotFenixio",
-            "role": "Developer"
+            "name": "zSebas",
+            "role": "Developer & Project Owner"
         },
         {
-            "name": "zSebas",
+            "name": "NotFenixio",
+            "homepage": "https://notfenixio.github.io/web",
             "role": "Developer"
         }
     ]
-    
-    "name": "Test"
-    "Description": "Test2"
 }
