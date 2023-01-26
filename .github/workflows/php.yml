@@ -31,9 +31,25 @@ jobs:
 
     - name: Install dependencies
       run: composer install --prefer-dist --no-progress
+    
+    - name: Run PHPStan with ReviewDog
+      uses: GeneaLabs/action-reviewdog-phpstan@1.1.2
+      with:
+        # GITHUB_TOKEN
+        github_token: ${{ github.token }}
+        # Report level for reviewdog [info,warning,error].
+        level: warning
+        # Report level for phpstan.
+        phpstan_level: 4
+        # Reporter of reviewdog command [github-pr-check,github-pr-review].
+        reporter: github-pr-check
+        # Directory to run checks against.
+        target_directory: src
+        # Fail on error.
+        fail_on_error: false
+        # Catch-all for any command-line arguments you would like to add.
+        args: #um
       
-    - name: OSKAR-phpstan
-      uses: OskarStark/phpstan-ga@1.7.0
 
     # Add a test script to composer.json, for instance: "test": "vendor/bin/phpunit"
     # Docs: https://getcomposer.org/doc/articles/scripts.md
