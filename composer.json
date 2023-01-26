@@ -1,16 +1,4 @@
 {
     "name": "Test",
-    "description": "A cool test for testing PHPStan with ",
-    "version": "0.3.0"
-    "authors": [
-        {
-            "name": "zSebas",
-            "role": "Developer & Project Owner"
-        },
-        {
-            "name": "NotFenixio",
-            "homepage": "https://notfenixio.github.io/web",
-            "role": "Developer"
-        }
-    ]
+    "description": "A cool test for testing PHPStan with ReviewDog"
 }
